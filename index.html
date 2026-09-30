@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Academia de Héroes del Código · Algoritmos y Programación III">
+    <title>APO III · Academia de Héroes del Código</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.3.6/dist/driver.css">
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container nav"><a class="brand" href="index.html"><span class="brand-mark">&lt;/&gt;</span><span>APO
+                    III · Academia de Héroes</span></a>
+            <div class="nav-shell"><button class="nav-toggle">☰</button>
+                <nav class="navlinks" id="mainNav"><a class="active" href="index.html">Inicio</a><a
+                        href="pages/dashboard.html">MI Batalla</a><a href="pages/tutorial.html">Tutorial</a><a
+                        href="pages/unidad1.html">Unidad I</a><a href="pages/unidad2.html" data-unit-link="2">Unidad
+                        II</a><a href="pages/unidad3.html" data-unit-link="3">Unidad III</a><a
+                        href="pages/ayuda.html">Ayuda</a><a href="pages/guion.html">Diseño</a></nav>
+                <div class="pill">⚡ <b data-xp>0</b> XP · Nivel <b data-level>1</b></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero container"><img class="banner" src="assets/banners/BannerPrincipal.png"
+                alt="Banner principal Algoritmos y Programación III">
+            <div class="hero-dashboard" style="margin-top:20px">
+                <div class="hero-panel">
+                    <div class="kicker">Curso · Diseño Tecnopedagógico</div>
+                    <h1>Academia de <span class="gradient-text">Héroes del Código</span></h1>
+                    <p class="lead">Una aventura gamificada donde cada victoria te acerca al siguiente nivel: juega,
+                        recibe retroalimentación, gana XP, equipa tu guerrero y desbloquea nuevas zonas demostrando lo
+                        que sabes.</p>
+                    <div class="profile-quick"><span class="profile-chip">🎮 Microjuegos</span><span
+                            class="profile-chip">🎡 Ruletas</span><span class="profile-chip">🎁 Cajas
+                            sorpresa</span><span class="profile-chip">🃏 Cartas</span><span class="profile-chip">🧙
+                            Avatar 3D</span></div>
+                    <div class="btns"><button class="btn" data-open-modal="registerModal">🧙 Crear / editar
+                            perfil</button><a class="btn alt" href="pages/dashboard.html">⚡ Iniciar batalla U1</a><a
+                            class="btn ghost" href="pages/tutorial.html">▶ Tutorial guiado</a><button class="btn ghost"
+                            data-start-tour>🧭 Paseo inicial</button></div>
+                </div>
+                <div class="hero-panel">
+                    <div class="kicker">Tu héroe</div>
+                    <div class="avatar-stage">
+                        <div class="stage-orbit"></div><canvas data-avatar3d="codex" data-avatar-live
+                            data-avatar-3d></canvas>
+                        <div class="stage-label">3D animado · seleccionable · accesorios equipables</div>
+                    </div>
+                    <div class="stat-row" style="margin-top:12px">
+                        <div class="stat-chip">Avatar: <b data-avatar-name>Codex</b></div>
+                        <div class="stat-chip">Nivel <b data-level>1</b></div>
+                        <div class="stat-chip">💰 <b data-coins>0</b></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section container">
+            <div class="section-head">
+                <div>
+                    <div class="kicker">01 · Selección del héroe</div>
+                    <h2>Elige tu avatar 3D</h2>
+                    <p class="muted">Selecciona desde el inicio. El personaje se mantiene activo y los accesorios
+                        ganados aparecen visualmente en el modelo.</p>
+                </div><button class="btn ghost small-btn" data-open-modal="authorModal">👤 Autor y contactos</button>
+            </div>
+            <div class="avatar-select-grid">
+                <div class="avatar-card-3d selected" data-avatar="codex" data-select-avatar="codex">
+                    <div class="avatar-stage"><canvas data-avatar3d="codex" data-avatar-3d></canvas></div>
+                    <div class="avatar-info">
+                        <h3>Codex</h3>
+                        <p>Arquitecto POO · análisis y construcción.</p><span class="rarity">Épico · Analítico</span>
+                    </div>
+                </div>
+                <div class="avatar-card-3d" data-avatar="logica" data-select-avatar="logica">
+                    <div class="avatar-stage"><canvas data-avatar3d="logica" data-avatar-3d></canvas></div>
+                    <div class="avatar-info">
+                        <h3>Lógica</h3>
+                        <p>Estratega algorítmica · patrones y decisiones.</p><span class="rarity">Épico ·
+                            Estratégico</span>
+                    </div>
+                </div>
+                <div class="avatar-card-3d" data-avatar="proyecto" data-select-avatar="proyecto">
+                    <div class="avatar-stage"><canvas data-avatar3d="proyecto" data-avatar-3d></canvas></div>
+                    <div class="avatar-info">
+                        <h3>Proyecto</h3>
+                        <p>Integrador de soluciones · GUI y datos.</p><span class="rarity">Épico · Integrador</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section container">
+            <div class="section-head">
+                <div>
+                    <div class="kicker">02 · Equipamiento</div>
+                    <h2>Accesorios que sí puedes utilizar</h2>
+                    <p class="muted">Se ganan jugando. Haz clic para equipar o retirar; el avatar 3D refleja el
+                        accesorio.</p>
+                </div>
+            </div>
+            <div class="equip-grid">
+                <div class="equip-card locked" data-item="visor" data-equip-item="visor">
+                    <div class="equip-icon">🥽</div><b>Visor de depuración</b><small>180 XP</small>
+                </div>
+                <div class="equip-card locked" data-item="capa" data-equip-item="capa">
+                    <div class="equip-icon">🦸</div><b>Capa algorítmica</b><small>360 XP</small>
+                </div>
+                <div class="equip-card locked" data-item="guantes" data-equip-item="guantes">
+                    <div class="equip-icon">🧤</div><b>Guantes de código</b><small>560 XP</small>
+                </div>
+                <div class="equip-card locked" data-item="botas" data-equip-item="botas">
+                    <div class="equip-icon">🥾</div><b>Botas de velocidad</b><small>760 XP</small>
+                </div>
+                <div class="equip-card locked" data-item="trofeo" data-equip-item="trofeo">
+                    <div class="equip-icon">🏆</div><b>Trofeo del arquitecto</b><small>950 XP</small>
+                </div>
+            </div>
+        </section>
+        <section class="section container">
+            <div class="kicker">03 · Mapa de aventura</div>
+            <h2>Las misiones se desbloquean por dominio</h2>
+            <div class="mission-map">
+                <div class="mission-connector"></div>
+                <div class="mission-node">
+                    <div class="node-icon">🧩</div>
+                    <div class="node-state">ACTIVA</div>
+                    <h3>Unidad I · POO</h3>
+                    <p>Quiz, ruleta, caja sorpresa y cartas antes de la misión.</p><a class="btn small-btn"
+                        href="pages/unidad1.html">Jugar</a>
+                </div>
+                <div class="mission-node locked">
+                    <div class="node-icon">🖥️</div>
+                    <div class="node-state">🔒 BLOQUEADA</div>
+                    <h3>Unidad II · GUI</h3>
+                    <p>Se habilita solo después de superar la misión POO.</p><a class="btn ghost small-btn"
+                        href="pages/unidad2.html">Ver ruta</a>
+                </div>
+                <div class="mission-node locked">
+                    <div class="node-icon">💾</div>
+                    <div class="node-state">🔒 BLOQUEADA</div>
+                    <h3>Unidad III · Persistencia</h3>
+                    <p>Se habilita solo después de superar la misión GUI.</p><a class="btn ghost small-btn"
+                        href="pages/unidad3.html">Ver ruta</a>
+                </div>
+            </div>
+        </section>
+        <section class="section container">
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="kicker">04 · Experiencia multimedia</div>
+                    <h2>🎬 Videos dentro de la página</h2>
+                    <p class="muted">Las microclases se reproducen mediante reproductores incrustados sin abandonar la
+                        experiencia.</p><a class="btn ghost small-btn" href="pages/unidad1.html">Ir a recursos POO</a>
+                </div>
+                <div class="card">
+                    <div class="kicker">05 · Audio</div>
+                    <h2>🎙️ Voces y ambientes</h2>
+                    <p class="muted">Narraciones con voces españolas disponibles en el dispositivo y efectos de
+                        interacción generados localmente.</p><button class="btn alt small-btn"
+                        data-speak="Bienvenido a la Academia de Héroes del Código. Selecciona tu avatar, completa los juegos y desbloquea cada misión demostrando lo que sabes.">▶
+                        Escuchar bienvenida</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container"><b>Algoritmos y Programación III · Universidad Mariana · 2026-2</b>
+            <p>Recurso educativo interactivo · Curso: Diseño Tecnopedagógico.</p>
+            <div class="footer-actions"><button class="btn ghost small-btn" data-open-modal="authorModal">Créditos del
+                    proyecto</button><button class="btn ghost small-btn" data-reset>Reiniciar aventura</button></div>
+        </div>
+    </footer>
+    <div class="modal" id="registerModal">
+        <div class="modal-box">
+            <div class="kicker">Registro inicial</div>
+            <h2>Crea tu identidad de héroe</h2>
+            <p class="muted">El tu perfil y progreso se guardan localmente en este navegador.</p>
+            <div class="form-grid">
+                <div class="field"><label>Nombre de jugador *</label><input id="regName" placeholder="Ej. Alex Código">
+                </div>
+                <div class="field"><label>Correo opcional</label><input id="regEmail" type="email"
+                        placeholder="correo@ejemplo.com"></div>
+                <div class="field"><label>Tipo de jugador</label><select id="regType">
+                        <option value="explorador">🧭 Explorador</option>
+                        <option value="competidor">🏆 Competidor</option>
+                        <option value="coleccionista">🧰 Coleccionista</option>
+                        <option value="colaborador">🤝 Colaborador</option>
+                    </select></div>
+                <div class="field"><label>Avatar inicial</label>
+                    <div class="modal-avatar-grid"><button type="button" class="mini-avatar selected"
+                            data-avatar="codex" data-select-avatar="codex"><span
+                                class="mini-hero mini-codex">⚔</span><b>Codex</b><small>Guerrero
+                                POO</small></button><button type="button" class="mini-avatar" data-avatar="logica"
+                            data-select-avatar="logica"><span
+                                class="mini-hero mini-logica">✦</span><b>Lógica</b><small>Estratega</small></button><button
+                            type="button" class="mini-avatar" data-avatar="proyecto" data-select-avatar="proyecto"><span
+                                class="mini-hero mini-proyecto">🛡</span><b>Proyecto</b><small>Comandante</small></button>
+                    </div><small class="muted">También puedes cambiarlo después desde Inicio.</small>
+                </div>
+            </div>
+            <div class="btns"><button class="btn alt" data-register>🚀 Comenzar aventura</button><button
+                    class="btn ghost" data-close-modal="registerModal">Cancelar</button></div>
+        </div>
+    </div>
+    <div class="modal author-modal" id="authorModal">
+        <div class="modal-box">
+            <div class="kicker">Curso: Diseño Tecnopedagógico</div>
+            <h2>Autor y contactos del proyecto</h2>
+            <div class="author-grid">
+                <div class="author-card">
+                    <h3>👨‍🏫 Autor</h3>
+                    <p><b>Wilson Andres Castillo Castro</b></p>
+                    <p class="muted">Docente e investigador · Magister en Ingeniería Computacional</p>
+                    <p class="muted">AI-Educa: Descubriendo el Potencial de la Inteligencia Artificial en la Educación</p>
+                </div>
+                <div class="author-card">
+                    <h3>🏫 Contexto académico</h3>
+                    <p><b>Universidad de Investigación e Innovación de México (UIIX)</b></p>
+                    <p class="muted">Misión cumplida</p>
+                    <p class="muted">Curso: Diseño Tecnopedagógico</p>
+                    <p class="muted">Presentado a: Dra. Yosly Caridad Hernández Bieliukas</p>
+                </div>
+            </div>
+            <div class="author-card" style="margin-top:18px">
+                <h3>📬 Contactos</h3>
+                <div class="contact-link">🏫 Contacto académico: <b>🇨🇴 / 3163411347</b></div>
+                <div class="contact-link">✉️ Correo institucional: <b>wcastilloc@comunidad.uiix.edu.mx</b></div>
+                <div class="contact-link">💻 GitHub / portafolio: <b>ThiagoCastilloUM</b></div>
+            </div>
+            <div class="btns"><button class="btn ghost" data-close-modal="authorModal">Cerrar</button></div>
+        </div>
+    </div>
+    <div class="toast"></div>
+    <script src="js/core/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <script src="js/visual/avatar3d.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/driver.js@1.3.6/dist/driver.js.iife.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="js/core/ui-enhancements.js"></script>
+    <section class="section container podcast-section">
+        <div class="section-head">
+            <div>
+                <div class="kicker">🎙️ Podcast del curso</div>
+                <h2>Voces de la Academia</h2>
+                <p class="muted">Escucha una introducción breve antes de comenzar la aventura.</p>
+            </div>
+        </div>
+        <div class="podcast-player card">
+            <div class="podcast-art">🎙️</div>
+            <div class="podcast-content"><strong>Episodio 01 · El Guerrero del Código</strong><span>POO, gamificación y
+                    ruta de aprendizaje</span><audio controls preload="metadata">
+                    <source src="assets/audio/podcast_academia.wav" type="audio/wav">Tu navegador no puede reproducir
+                    este audio.
+                </audio></div>
+        </div>
+    </section>
+    <div class="floating-actions"><button class="floating-btn credits-float" data-open-modal="authorModal"
+            title="Créditos y autor">✦</button><button class="floating-btn" data-open-modal="chatModal"
+            title="Chat colaborativo">💬</button></div>
+    <div class="modal" id="chatModal">
+        <div class="modal-box chat-modal">
+            <div class="kicker">💬 Comunidad</div>
+            <h2>Chat colaborativo</h2>
+            <p class="muted">Comparte dudas, ideas y estrategias con otros héroes.</p>
+            <div data-chat class="chat-panel">
+                <div class="chat-list"></div>
+                <div class="chat-compose"><input class="chat-input" placeholder="Escribe tu aporte..."><button
+                        class="btn alt chat-send">Enviar</button></div>
+            </div><button class="btn ghost" data-close-modal="chatModal">Cerrar</button>
+        </div>
+    </div>
+</body>
+
+</html>

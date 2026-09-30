@@ -1,0 +1,1 @@
+El microvideo puede regenerarse con el guion de docs/guion-didactico.md. Detalle técnico: append_data requires ndarray as first arg

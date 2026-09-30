@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Unidad I · POO</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.3.6/dist/driver.css">
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container nav"><a class="brand" href="../index.html"><span
+                    class="brand-mark">&lt;/&gt;</span><span>APO III</span></a>
+            <div class="nav-shell"><button class="nav-toggle">☰</button>
+                <nav class="navlinks" id="mainNav"><a href="../index.html">Inicio</a><a href="dashboard.html">Mi
+                        HUD</a><a href="tutorial.html">Tutorial</a><a class="active" href="unidad1.html">Unidad I</a><a
+                        href="unidad2.html" data-unit-link="2">Unidad II</a><a href="unidad3.html"
+                        data-unit-link="3">Unidad III</a><a href="ayuda.html">Ayuda</a><a href="guion.html">Diseño</a>
+                </nav>
+                <div class="pill">⚡ <b data-xp>0</b> XP · Nivel <b data-level>1</b></div>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <section class="hero"><img class="banner" src="../assets/banners/BannerUnidad1.png"
+                alt="Unidad I · Programación Orientada a Objetos"></section>
+        <section class="section">
+            <div class="kicker">Unidad I · Zona POO</div>
+            <h1>Fundamentos de <span class="gradient-text">Programación Orientada a Objetos</span></h1>
+            <p class="lead">Completa seis desafíos diferentes, en orden, y demuestra dominio antes de abrir la misión.
+                Solo después se habilita la misión de modelado y la siguiente unidad.</p>
+            <div class="card">
+                <div class="xp-hud"><b>XP</b>
+                    <div class="xpbar"><span data-progress style="width:0%"></span></div><span><b data-xp>0</b></span>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="kicker">Recursos multimedia locales</div>
+            <h2>Aprende antes de jugar</h2>
+            <div class="grid grid-2">
+                <div class="video-card"><video controls preload="metadata" playsinline
+                        poster="../assets/banners/BannerUnidad1.png">
+                        <source src="../assets/video/unidad1_poo.mp4" type="video/mp4">Tu navegador no puede reproducir
+                        este video.
+                    </video>
+                    <div class="video-meta"><b>Microclase local · Fundamentos de POO</b><br><span
+                            class="muted small">Reproducción local dentro del aplicativo.</span></div>
+                </div>
+                
+            </div>
+            <div class="card" style="margin-top:16px">
+                <div class="kicker">🎙️ Audio</div>
+                <h3>Guía de estudio</h3>
+                <div class="audio-deck">
+                    <div class="audio-option">
+                        <h3>🎧 Bienvenida</h3><button class="btn ghost"
+                            data-speak="Bienvenido a la zona POO. Completa los seis desafíos en orden para abrir la misión.">▶
+                            Escuchar</button>
+                    </div>
+                    <div class="audio-option">
+                        <h3>🧠 Conceptos</h3><button class="btn ghost"
+                            data-speak="La clase define estructura y comportamiento; el objeto es una instancia. La encapsulación protege el estado y el polimorfismo permite comportamientos especializados.">▶
+                            Escuchar</button>
+                    </div>
+                    <div class="audio-option">
+                        <h3>⚔️ Misión</h3><button class="btn alt"
+                            data-speak="Guerrero del código: domina cada desafío, consigue bonificaciones y forja tu acceso a la siguiente zona.">▶
+                            Escuchar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="kicker">Los cuatro poderes</div>
+            <h2>Mapa conceptual</h2>
+            <div class="infographic">
+                <div class="info-node">
+                    <div class="emoji">🔍</div>
+                    <h3>Abstracción</h3>
+                    <p>Conservar lo esencial del dominio y ocultar detalles innecesarios.</p>
+                </div>
+                <div class="info-node">
+                    <div class="emoji">🔐</div>
+                    <h3>Encapsulación</h3>
+                    <p>Proteger el estado y controlar cómo se modifica.</p>
+                </div>
+                <div class="info-node">
+                    <div class="emoji">🧬</div>
+                    <h3>Herencia</h3>
+                    <p>Representar especialización entre clases relacionadas.</p>
+                </div>
+                <div class="info-node">
+                    <div class="emoji">🎭</div>
+                    <h3>Polimorfismo</h3>
+                    <p>Permitir que una referencia común trabaje con comportamientos especializados.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="game-shell game-arena" id="u1game1">
+                <div id="memory1"></div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="game-shell game-arena" id="u1game2">
+                <div id="quiz1"></div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="game-shell game-arena" id="u1game3">
+                <div id="sorter1"></div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="game-shell game-arena" id="u1game4">
+                <div id="roulette1"></div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="game-shell game-arena" id="u1game5">
+                <div id="boxes1"></div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="game-shell game-arena" id="u1game6">
+                <div id="battle1"></div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="card mission-console" id="missionCard">
+                <div>
+                    <div class="kicker">Misión final · 250 XP + 🧩</div>
+                    <h2>⚔️ Forja POO</h2>
+                    <p>Modela una problemática real de una empresa: identifica actores, clases, atributos, métodos y
+                        relaciones; después explica por qué tu modelo representa el dominio.</p>
+                    <div class="mission-checklist"><label class="check-row"><input type="checkbox" class="mcheck">
+                            Identifiqué el problema y sus actores.</label><label class="check-row"><input
+                                type="checkbox" class="mcheck"> Definí al menos dos clases con atributos y
+                            métodos.</label><label class="check-row"><input type="checkbox" class="mcheck"> Expliqué una
+                            relación entre las clases.</label></div><textarea class="proof" id="proof1"
+                        placeholder="Escribe una evidencia breve de tu decisión de modelado..."></textarea><button
+                        class="btn alt" id="missionBtn" disabled style="margin-top:10px">🔒 Completa los seis
+                        juegos</button>
+                </div>
+                <div class="mission-gate" id="missionGate">
+                    <div class="lock-icon">🔒</div>
+                    <h3>Puerta de misión</h3>
+                    <p id="missionMsg">Supera los seis desafíos en orden para abrirla.</p>
+                    <div class="mission-list">
+                        <div>🃏 Juego 1 · Cartas de memoria</div>
+                        <div>⚡ Juego 2 · Quiz</div>
+                        <div>🧱 Juego 3 · Constructor</div>
+                        <div>🎡 Juego 4 · Ruleta</div>
+                        <div>🎁 Juego 5 · Caja sorpresa</div>
+                        <div>⚔️ Juego 6 · Batalla</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">Unidad I · POO · Academia de Héroes</div>
+    </footer>
+    <div class="toast"></div>
+    <script src="../js/core/app.js"></script>
+    <script src="../js/games/gamekit.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <script src="../js/visual/avatar3d.js"></script>
+    <script>
+        GameKit.memory({ root: document.getElementById('memory1'), key: 'u1g1', xp: 100, coins: 18, pairs: [['Clase', 'Molde'], ['Objeto', 'Instancia'], ['Atributo', 'Estado'], ['Método', 'Comportamiento']] });
+        GameKit.quiz({ root: document.getElementById('quiz1'), key: 'u1g2', xp: 70, coins: 12, questions: [{ q: '“Estudiante” como molde que define nombre, edad y matricularse.', a: 0, opts: ['Clase', 'Objeto', 'Método'], note: 'La clase define estructura y comportamiento.' }, { q: '“estudianteAna” creado a partir de Estudiante.', a: 1, opts: ['Atributo', 'Objeto', 'Clase'], note: 'Es una instancia concreta.' }, { q: '“matricularse()” representa una acción.', a: 0, opts: ['Método', 'Objeto', 'Clase'], note: 'Un método modela comportamiento.' }, { q: '¿Qué principio protege el estado interno mediante acceso controlado?', a: 1, opts: ['Herencia', 'Encapsulación', 'Polimorfismo'], note: 'La encapsulación restringe y controla el acceso al estado.' }] });
+        GameKit.sorter({ root: document.getElementById('sorter1'), key: 'u1g3', xp: 95, coins: 17, items: ['Crear clase', 'Definir atributos', 'Definir métodos', 'Crear instancia', 'Probar comportamiento'] });
+        GameKit.roulette({ root: document.getElementById('roulette1'), key: 'u1g4', xp: 80, coins: 14, items: [{ title: 'Abstracción', text: '¿Qué elemento conviene conservar en un sistema de matrículas?', opts: ['Color favorito del estudiante', 'Código, nombre y estado académico', 'Marca del computador'], a: 1 }, { title: 'Encapsulación', text: '¿Cuál diseño protege mejor el saldo de una cuenta?', opts: ['saldo público', 'saldo privado y método depositar()', 'saldo eliminado'], a: 1 }, { title: 'Herencia', text: '¿Qué relación expresa mejor “Docente es una Persona”?', opts: ['Especialización', 'Composición obligatoria', 'Duplicación'], a: 0 }, { title: 'Polimorfismo', text: '¿Qué idea lo representa?', opts: ['Una referencia común puede ejecutar comportamientos especializados', 'Todos los métodos son privados', 'No existen clases'], a: 0 }] });
+        GameKit.boxes({ root: document.getElementById('boxes1'), key: 'u1g5', xp: 90, coins: 16, boxes: [{ icon: '🔐', q: 'Una clase Cliente debe impedir cambios directos al saldo. ¿Qué opción es coherente?', opts: ['public double saldo', 'private double saldo + métodos controlados', 'sin atributo'], a: 1 }, { icon: '🧬', q: 'Vehículo y Automóvil: ¿qué relación puede representar especialización?', opts: ['Herencia', 'Ruleta', 'Conversión de texto'], a: 0 }, { icon: '🔍', q: 'Al modelar una biblioteca, ¿qué corresponde a abstracción?', opts: ['Eliminar todo dato', 'Conservar entidades y comportamientos relevantes', 'Duplicar cada pantalla'], a: 1 }, { icon: '🎭', q: 'Una colección de figuras que llama calcularArea() con implementaciones distintas ilustra...', opts: ['Polimorfismo', 'Compilación', 'CSS'], a: 0 }] });
+        GameKit.battle({ root: document.getElementById('battle1'), key: 'u1g6', xp: 110, coins: 20, pairs: [['¿Qué representa un objeto creado a partir de una clase?', ['Una instancia', 'Un paquete', 'Un comentario'], 0], ['¿Qué principio protege el estado interno?', ['Encapsulación', 'CSS', 'Compilación'], 0], ['¿Qué relación modela especialización?', ['Herencia', 'Duplicación', 'Impresión'], 0], ['¿Qué permite usar una referencia común con implementaciones distintas?', ['Polimorfismo', 'HTML', 'Persistencia'], 0]].map(x => ({ q: x[0], opts: x[1], a: x[2] })) });
+        function updateMission() { const ok = canMission('u1mission'), s = state(), done = s.missions.includes('u1mission'); const btn = document.getElementById('missionBtn'), gate = document.getElementById('missionGate'), msg = document.getElementById('missionMsg'); gate.classList.toggle('unlocked', ok); if (done) { msg.textContent = '🏆 Misión superada. Unidad II desbloqueada.'; btn.textContent = '✓ Misión completada'; btn.disabled = true; return } btn.disabled = !ok || ![...document.querySelectorAll('.mcheck')].every(x => x.checked) || document.getElementById('proof1').value.trim().length < 30; msg.textContent = ok ? 'Puerta abierta. Completa la evidencia para reclamar la recompensa.' : 'Supera los seis desafíos en orden para abrirla.'; btn.textContent = ok ? '⚔️ Reclamar misión' : '🔒 Completa los seis juegos' }
+        document.querySelectorAll('.mcheck').forEach(x => x.addEventListener('change', updateMission)); document.getElementById('proof1').addEventListener('input', updateMission); document.getElementById('missionBtn').onclick = () => { if (completeMission('u1mission', 250, 'poo', 60)) { document.getElementById('missionMsg').textContent = '🏆 Misión completada. La Unidad II está desbloqueada.'; updateMission() } }; window.addEventListener('gameStateChanged', updateMission); updateMission();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/driver.js@1.3.6/dist/driver.js.iife.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="../js/core/ui-enhancements.js"></script>
+</body>
+
+</html>
